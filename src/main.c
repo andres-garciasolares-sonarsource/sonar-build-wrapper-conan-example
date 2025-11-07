@@ -27,6 +27,9 @@ int main(void) {
     printf("Compressed size is: %lu\n", strlen(buffer_out));
 
     printf("ZLIB VERSION: %s\n", zlibVersion());
+
+    // issue for sonarqube
+    1 + 1;
     
     return EXIT_SUCCESS;
 }
