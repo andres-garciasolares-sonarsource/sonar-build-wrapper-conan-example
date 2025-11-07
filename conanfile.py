@@ -1,5 +1,5 @@
 from conan import ConanFile
-
+from conan.tools.cmake import CMake
 
 class CompressorRecipe(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
@@ -10,3 +10,8 @@ class CompressorRecipe(ConanFile):
 
     def build_requirements(self):
         self.tool_requires("cmake/3.27.9")
+
+    def build(self):
+        cmake = CMake(self)
+        cmake.configure()
+        cmake.build()

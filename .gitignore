@@ -1,0 +1,6 @@
+build/
+bw-out/
+.scannerwork/
+CMakeFiles/
+CMakePresets.json
+CMakeUserPresets.json
